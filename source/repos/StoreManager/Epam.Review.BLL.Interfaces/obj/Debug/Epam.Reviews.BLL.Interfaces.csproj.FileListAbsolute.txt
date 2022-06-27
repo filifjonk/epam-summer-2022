@@ -1,0 +1,11 @@
+C:\Users\chipu\source\repos\StoreManager\Epam.Review.BLL.Interfaces\bin\Debug\Epam.Review.BLL.Interfaces.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Review.BLL.Interfaces\bin\Debug\Epam.Review.BLL.Interfaces.pdb
+C:\Users\chipu\source\repos\StoreManager\Epam.Review.BLL.Interfaces\bin\Debug\Epam.Store.Entities.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Review.BLL.Interfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Review.BLL.Interfaces\bin\Debug\Epam.Store.Entities.pdb
+C:\Users\chipu\source\repos\StoreManager\Epam.Review.BLL.Interfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\chipu\source\repos\StoreManager\Epam.Review.BLL.Interfaces\obj\Debug\Epam.Reviews.BLL.Interfaces.csprojAssemblyReference.cache
+C:\Users\chipu\source\repos\StoreManager\Epam.Review.BLL.Interfaces\obj\Debug\Epam.Reviews.BLL.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\chipu\source\repos\StoreManager\Epam.Review.BLL.Interfaces\obj\Debug\Epam.Reviews.BLL.Interfaces.csproj.CopyComplete
+C:\Users\chipu\source\repos\StoreManager\Epam.Review.BLL.Interfaces\obj\Debug\Epam.Review.BLL.Interfaces.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Review.BLL.Interfaces\obj\Debug\Epam.Review.BLL.Interfaces.pdb

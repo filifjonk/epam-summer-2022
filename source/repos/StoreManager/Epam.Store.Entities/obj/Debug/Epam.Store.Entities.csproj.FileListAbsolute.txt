@@ -1,0 +1,9 @@
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.Entities\bin\Debug\Epam.Store.Entities.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.Entities\bin\Debug\Epam.Store.Entities.pdb
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.Entities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.Entities\bin\Debug\Newtonsoft.Json.xml
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.Entities\obj\Debug\Epam.Store.Entities.csprojAssemblyReference.cache
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.Entities\obj\Debug\Epam.Store.Entities.csproj.CoreCompileInputs.cache
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.Entities\obj\Debug\Epam.Store.Entities.csproj.CopyComplete
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.Entities\obj\Debug\Epam.Store.Entities.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.Entities\obj\Debug\Epam.Store.Entities.pdb

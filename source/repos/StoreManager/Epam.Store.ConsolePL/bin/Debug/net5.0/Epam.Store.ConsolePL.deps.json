@@ -1,0 +1,123 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Epam.Store.ConsolePL/1.0.0": {
+        "dependencies": {
+          "Epam.Reviews.Dependencies": "1.0.0",
+          "Epam.Store.BLL": "1.0.0",
+          "Epam.Store.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Epam.Store.ConsolePL.dll": {}
+        }
+      },
+      "Epam.Reviews.BLL.Interfaces/1.0.0": {
+        "dependencies": {
+          "Epam.Store.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Epam.Review.BLL.Interfaces.dll": {}
+        }
+      },
+      "Epam.Reviews.Dependencies/1.0.0": {
+        "dependencies": {
+          "Epam.Reviews.BLL.Interfaces": "1.0.0",
+          "Epam.Store.BLL": "1.0.0",
+          "Epam.Store.DAL": "1.0.0",
+          "Epam.Store.DAL.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "Epam.Review.Dependencies.dll": {}
+        }
+      },
+      "Epam.Store.BLL/1.0.0": {
+        "dependencies": {
+          "Epam.Reviews.BLL.Interfaces": "1.0.0",
+          "Epam.Store.DAL": "1.0.0",
+          "Epam.Store.DAL.Interfaces": "1.0.0",
+          "Epam.Store.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Epam.Store.BLL.dll": {}
+        }
+      },
+      "Epam.Store.DAL/1.0.0": {
+        "dependencies": {
+          "Epam.Store.DAL.Interfaces": "1.0.0",
+          "Epam.Store.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Epam.Store.DAL.dll": {}
+        }
+      },
+      "Epam.Store.DAL.Interfaces/1.0.0": {
+        "dependencies": {
+          "Epam.Store.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Epam.Store.DAL.Interfaces.dll": {}
+        }
+      },
+      "Epam.Store.Entities/1.0.0": {
+        "runtime": {
+          "Epam.Store.Entities.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.0.0": {
+        "runtime": {
+          "Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Epam.Store.ConsolePL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Epam.Reviews.BLL.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Epam.Reviews.Dependencies/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Epam.Store.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Epam.Store.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Epam.Store.DAL.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Epam.Store.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/13.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

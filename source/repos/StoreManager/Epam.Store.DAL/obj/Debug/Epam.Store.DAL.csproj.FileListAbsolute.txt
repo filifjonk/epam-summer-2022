@@ -1,0 +1,13 @@
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\bin\Debug\Epam.Store.DAL.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\bin\Debug\Epam.Store.DAL.pdb
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\bin\Debug\Epam.Store.DAL.Interfaces.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\bin\Debug\Epam.Store.Entities.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\bin\Debug\Epam.Store.DAL.Interfaces.pdb
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\bin\Debug\Epam.Store.Entities.pdb
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\obj\Debug\Epam.Store.DAL.csprojAssemblyReference.cache
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\obj\Debug\Epam.Store.DAL.csproj.CoreCompileInputs.cache
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\obj\Debug\Epam.Store.DAL.csproj.CopyComplete
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\obj\Debug\Epam.Store.DAL.dll
+C:\Users\chipu\source\repos\StoreManager\Epam.Store.DAL\obj\Debug\Epam.Store.DAL.pdb

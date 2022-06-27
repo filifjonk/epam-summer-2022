@@ -1,0 +1,189 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Epam.Reviews.BLL.Interfaces/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Epam.Store.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Epam.Reviews.BLL.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.Reviews.BLL.Interfaces.dll": {}
+        }
+      },
+      "Epam.Reviews.Dependencies/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Epam.Reviews.BLL.Interfaces": "1.0.0",
+          "Epam.Store.BLL": "1.0.0",
+          "Epam.Store.DAL": "1.0.0",
+          "Epam.Store.DAL.Interfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Epam.Reviews.Dependencies.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.Reviews.Dependencies.dll": {}
+        }
+      },
+      "Epam.Store.BLL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Epam.Reviews.BLL.Interfaces": "1.0.0",
+          "Epam.Store.DAL": "1.0.0",
+          "Epam.Store.DAL.Interfaces": "1.0.0",
+          "Epam.Store.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Epam.Store.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.Store.BLL.dll": {}
+        }
+      },
+      "Epam.Store.DAL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Epam.Store.DAL.Interfaces": "1.0.0",
+          "Epam.Store.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Epam.Store.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.Store.DAL.dll": {}
+        }
+      },
+      "Epam.Store.DAL.Interfaces/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Epam.Store.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Epam.Store.DAL.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.Store.DAL.Interfaces.dll": {}
+        }
+      },
+      "Epam.Store.Entities/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Epam.Store.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.Store.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Epam.Reviews.BLL.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Epam.Review.BLL.Interfaces/Epam.Reviews.BLL.Interfaces.csproj",
+      "msbuildProject": "../Epam.Review.BLL.Interfaces/Epam.Reviews.BLL.Interfaces.csproj"
+    },
+    "Epam.Reviews.Dependencies/1.0.0": {
+      "type": "project",
+      "path": "../Epam.Review.Dependencies/Epam.Reviews.Dependencies.csproj",
+      "msbuildProject": "../Epam.Review.Dependencies/Epam.Reviews.Dependencies.csproj"
+    },
+    "Epam.Store.BLL/1.0.0": {
+      "type": "project",
+      "path": "../Epam.Store.BLL/Epam.Store.BLL.csproj",
+      "msbuildProject": "../Epam.Store.BLL/Epam.Store.BLL.csproj"
+    },
+    "Epam.Store.DAL/1.0.0": {
+      "type": "project",
+      "path": "../Epam.Store.DAL/Epam.Store.DAL.csproj",
+      "msbuildProject": "../Epam.Store.DAL/Epam.Store.DAL.csproj"
+    },
+    "Epam.Store.DAL.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Epam.Store.DAL.Interfaces/Epam.Store.DAL.Interfaces.csproj",
+      "msbuildProject": "../Epam.Store.DAL.Interfaces/Epam.Store.DAL.Interfaces.csproj"
+    },
+    "Epam.Store.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Epam.Store.Entities/Epam.Store.Entities.csproj",
+      "msbuildProject": "../Epam.Store.Entities/Epam.Store.Entities.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Epam.Reviews.Dependencies >= 1.0.0",
+      "Epam.Store.BLL >= 1.0.0",
+      "Epam.Store.Entities >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\chipu\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\Epam.Store.ConsolePL.csproj",
+      "projectName": "Epam.Store.ConsolePL",
+      "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\Epam.Store.ConsolePL.csproj",
+      "packagesPath": "C:\\Users\\chipu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\chipu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj": {
+              "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj"
+            },
+            "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj": {
+              "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj"
+            },
+            "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
+              "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
