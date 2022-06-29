@@ -18,7 +18,7 @@ namespace Epam.Store.DAL
 
         public IEnumerable<Review> GetReviews(bool orderById = true)
         {
-            using (_connection)
+            using (_connection = new SqlConnection(_connectionString))
             {
                 var query = "SELECT Id, Text, CreationDate FROM Reviews"
                     + (orderById ? " ORDER BY Id" : "");
@@ -43,7 +43,7 @@ namespace Epam.Store.DAL
 
         public bool AddReview(Review review)
         {
-            using (_connection)
+            using (_connection = new SqlConnection(_connectionString))
             {
                 var query = "INSERT INTO dbo.Reviews(Text, CreationDate) " +
                     "VALUES(@Text, @CreationDate)";
@@ -62,7 +62,7 @@ namespace Epam.Store.DAL
 
         public Review GetReview(int id)
         {
-            using(_connection)
+            using(_connection = new SqlConnection(_connectionString))
             {
                 var stProc = "Reviews_GetById";
 
@@ -93,7 +93,7 @@ namespace Epam.Store.DAL
 
         public Review CreateNewReviewwithScopeID(string text, DateTime creationDate)
         {
-            using(_connection)
+            using(_connection = new SqlConnection(_connectionString))
             {
                 var query = "INSERT INTO dbo.Reviews(Text, CreationDate) " +
                     "VALUES(@Text, @CreationDate); SELECT CAST(scope_identity() AS INT) AS NewID";

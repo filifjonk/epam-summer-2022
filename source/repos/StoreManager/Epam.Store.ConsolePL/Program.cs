@@ -10,6 +10,8 @@ namespace Epam.Store.ConsolePL
         {
             var bll = DependencyResolver.Instance.ReviewLogic;
 
+            Console.WriteLine(bll.GetReview(1)); 
+
             foreach(var item in bll.GetReviews())
             {
                 Console.WriteLine(item);

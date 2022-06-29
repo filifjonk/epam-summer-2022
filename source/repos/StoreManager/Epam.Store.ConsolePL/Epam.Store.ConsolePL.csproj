@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Epam.Review.Dependencies\Epam.Reviews.Dependencies.csproj" />
     <ProjectReference Include="..\Epam.Store.BLL\Epam.Store.BLL.csproj" />
     <ProjectReference Include="..\Epam.Store.Entities\Epam.Store.Entities.csproj" />
