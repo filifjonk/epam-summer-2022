@@ -1,19 +1,19 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\Epam.Store.ConsolePL.csproj": {}
+    "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\Epam.Store.ConsolePL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj": {
+    "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj",
         "projectName": "Epam.Reviews.BLL.Interfaces",
-        "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj",
+        "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
               }
             }
           }
@@ -23,25 +23,25 @@
         "net472": {}
       }
     },
-    "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj": {
+    "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj",
+        "projectUniqueName": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj",
         "projectName": "Epam.Reviews.Dependencies",
-        "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj",
+        "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj"
               },
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj"
               },
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj"
               },
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj"
               }
             }
           }
@@ -51,25 +51,25 @@
         "net472": {}
       }
     },
-    "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj": {
+    "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj",
         "projectName": "Epam.Store.BLL",
-        "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj",
+        "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.BLL.Interfaces\\Epam.Reviews.BLL.Interfaces.csproj"
               },
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj"
               },
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj"
               },
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         "net472": {}
       }
     },
-    "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\Epam.Store.ConsolePL.csproj": {
+    "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\Epam.Store.ConsolePL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\Epam.Store.ConsolePL.csproj",
+        "projectUniqueName": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\Epam.Store.ConsolePL.csproj",
         "projectName": "Epam.Store.ConsolePL",
-        "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\Epam.Store.ConsolePL.csproj",
+        "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\Epam.Store.ConsolePL.csproj",
         "packagesPath": "C:\\Users\\chipu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\obj\\",
+        "outputPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.ConsolePL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chipu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -103,14 +103,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Review.Dependencies\\Epam.Reviews.Dependencies.csproj"
               },
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.BLL\\Epam.Store.BLL.csproj"
               },
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
               }
             }
           }
@@ -124,6 +124,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -143,16 +153,16 @@
         }
       }
     },
-    "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj": {
+    "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj",
         "projectName": "Epam.Store.DAL.Interfaces",
-        "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj",
+        "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
               }
             }
           }
@@ -162,19 +172,19 @@
         "net472": {}
       }
     },
-    "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj": {
+    "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj",
         "projectName": "Epam.Store.DAL",
-        "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj",
+        "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL\\Epam.Store.DAL.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.DAL.Interfaces\\Epam.Store.DAL.Interfaces.csproj"
               },
-              "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
-                "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
+              "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
+                "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
               }
             }
           }
@@ -184,11 +194,11 @@
         "net472": {}
       }
     },
-    "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
+    "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj",
         "projectName": "Epam.Store.Entities",
-        "projectPath": "C:\\Users\\chipu\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
+        "projectPath": "C:\\Users\\chipu\\OneDrive\\Documents\\epam-summer-2022\\source\\repos\\StoreManager\\Epam.Store.Entities\\Epam.Store.Entities.csproj"
       },
       "frameworks": {
         "net472": {}
