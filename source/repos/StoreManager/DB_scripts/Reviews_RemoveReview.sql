@@ -1,0 +1,14 @@
+use Reviews
+go
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE dbo.Reviews_RemoveReview
+	@Id int
+as
+BEGIN
+	SET	NOCOUNT OFF;
+	DELETE FROM dbo.Reviews WHERE id = @Id
+END

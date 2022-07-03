@@ -30,10 +30,12 @@ namespace Epam.Store.BLL
 
         public void RemoveReview(Review review) => RemoveReview(review.ID);
         
-        public void EditReview(int id, string newText)
+        public void EditReview(int id, string str)
         {
-            _reviewDAO.EditReview(id, newText);
+            _reviewDAO.EditReview(id, str);
         }
+
+        
 
         public Review GetReview(int id) => _reviewDAO.GetReview(id);
 

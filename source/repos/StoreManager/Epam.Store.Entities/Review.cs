@@ -9,16 +9,18 @@ namespace Epam.Store.Entities
 {
     public class Review
     {
-        public Review(string text, int id)
+        public Review(string shop_name, string text, int id)
         {
             ID = id;
+            Shop_name = shop_name;
             Text = text;
             CreationDate = DateTime.Now;
         }
 
-        public Review(string text, int id, DateTime creationDate)
+        public Review(string shop_name, string text, int id, DateTime creationDate)
         {
             ID = id;
+            Shop_name = shop_name;
             Text = text;
             CreationDate = creationDate;
         }
@@ -30,11 +32,14 @@ namespace Epam.Store.Entities
             CreationDate = DateTime.Now;
         }
 
+        public Review() { }
+
         public int ID { get; private set; }
 
-        public string Text { get; private set; }
+        public string Shop_name { get; set; }
+        public string Text { get; set; }
 
-        public DateTime CreationDate { get; }
+        public DateTime CreationDate { get; set; }
 
         public void EditText(string str)
         {

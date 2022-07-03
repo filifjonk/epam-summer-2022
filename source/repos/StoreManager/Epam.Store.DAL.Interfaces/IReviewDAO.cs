@@ -10,8 +10,8 @@ namespace Epam.Store.DAL.Interfaces
     public interface IReviewDAO
     {
         bool AddReview(Review review);
-        void RemoveReview(int id);
-        void EditReview(int id, string newText);
+        bool RemoveReview(int id);
+        bool EditReview(int id, string newText);
         Review GetReview(int id);
         IEnumerable<Review> GetReviews(bool orderById);
     }

@@ -3,6 +3,7 @@ using Epam.Store.Entities;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -20,10 +21,12 @@ namespace Epam.Store.DAL
         {
             using (_connection = new SqlConnection(_connectionString))
             {
-                var query = "SELECT Id, Text, CreationDate FROM Reviews"
-                    + (orderById ? " ORDER BY Id" : "");
+                var stProc = "Reviews_GetReviews";
 
-                var command = new SqlCommand(query, _connection);
+                var command = new SqlCommand(stProc, _connection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
 
                 _connection.Open();
 
@@ -33,6 +36,7 @@ namespace Epam.Store.DAL
                 {
                     yield return new Review(
                         id: (int)reader["Id"],
+                        shop_name: reader["Shop_name"] as string,
                         text: reader["Text"] as string,
                         creationDate: (DateTime)reader["CreationDate"]);
 
@@ -45,10 +49,14 @@ namespace Epam.Store.DAL
         {
             using (_connection = new SqlConnection(_connectionString))
             {
-                var query = "INSERT INTO dbo.Reviews(Text, CreationDate) " +
-                    "VALUES(@Text, @CreationDate)";
-                var command = new SqlCommand(query, _connection);
+                var stProc = "Reviews_AddReview";
 
+                var command = new SqlCommand(stProc, _connection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
+
+                command.Parameters.AddWithValue("@Shop_name", review.Shop_name);
                 command.Parameters.AddWithValue("@Text", review.Text);
                 command.Parameters.AddWithValue("@CreationDate", review.CreationDate);
 
@@ -81,6 +89,7 @@ namespace Epam.Store.DAL
                 {
                     return new Review(
                         id: (int)reader["Id"],
+                        shop_name: reader["Shop_name"] as string,
                         text: reader["Text"] as string,
                         creationDate: (DateTime)reader["CreationDate"]);
                 }
@@ -91,37 +100,71 @@ namespace Epam.Store.DAL
 
         }
 
-        public Review CreateNewReviewwithScopeID(string text, DateTime creationDate)
+        //public Review CreateNewReviewwithScopeID(string text, DateTime creationDate)
+        //{
+        //    using(_connection = new SqlConnection(_connectionString))
+        //    {
+        //        var query = "INSERT INTO dbo.Reviews(Text, CreationDate) " +
+        //            "VALUES(@Text, @CreationDate); SELECT CAST(scope_identity() AS INT) AS NewID";
+        //        var command = new SqlCommand(query, _connection);
+
+        //        command.Parameters.AddWithValue("@Text", text);
+        //        command.Parameters.AddWithValue("@CreationDate", creationDate);
+
+        //        var result = command.ExecuteScalar();
+
+        //        if (result != null)
+        //            return new Review(
+        //                id: (int)result,
+
+        //                text: text,
+        //                creationDate: creationDate);
+        //        throw new InvalidOperationException(string.Format("Oops {0}, {1};",
+        //            text, creationDate));
+
+        //    }
+        //}
+        public bool RemoveReview(int id) //only for admin-role
         {
-            using(_connection = new SqlConnection(_connectionString))
+            using (_connection = new SqlConnection(_connectionString))
             {
-                var query = "INSERT INTO dbo.Reviews(Text, CreationDate) " +
-                    "VALUES(@Text, @CreationDate); SELECT CAST(scope_identity() AS INT) AS NewID";
-                var command = new SqlCommand(query, _connection);
+                var strProc = "dbo.Reviews_RemoveReview";
 
-                command.Parameters.AddWithValue("@Text", text);
-                command.Parameters.AddWithValue("@CreationDate", creationDate);
+                var command = new SqlCommand(strProc, _connection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
 
-                var result = command.ExecuteScalar();
+                command.Parameters.AddWithValue("@id", id);
 
-                if (result != null)
-                    return new Review(
-                        id: (int)result,
-                        text: text,
-                        creationDate: creationDate);
-                throw new InvalidOperationException(string.Format("Oops {0}, {1};",
-                    text, creationDate));
+                _connection.Open();
 
+                var result = command.ExecuteNonQuery();
+
+                return result > 0;
             }
         }
-        public void RemoveReview(int id)
-        {
-            //todo
-        }
 
-        public void EditReview(int id, string newText)
+        public bool EditReview(int id, string str)
         {
-            //todo
+            using (_connection = new SqlConnection(_connectionString))
+            {
+                var strProc = "dbo.Reviews_EditReview";
+
+                var command = new SqlCommand(strProc, _connection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
+
+                command.Parameters.AddWithValue("@ID", id);
+                command.Parameters.AddWithValue("@Change", str);
+
+
+                _connection.Open();
+                var result = command.ExecuteNonQuery();
+
+                return (result > 0);
+            }
         }
 
     } 
