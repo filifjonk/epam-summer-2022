@@ -35,7 +35,13 @@ namespace Epam.Store.BLL
             _reviewDAO.EditReview(id, str);
         }
 
-        
+        public string CheckEnter(string log, string pas)
+        {
+            _reviewDAO.CheckEnter(log, pas);
+            return _reviewDAO.CheckEnter(log, pas);
+        }
+
+        public IEnumerable<Review> FindByShopName(string name) => _reviewDAO.FindByShopName(name);
 
         public Review GetReview(int id) => _reviewDAO.GetReview(id);
 

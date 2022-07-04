@@ -25,7 +25,7 @@ namespace Epam.Store.ConsolePL
             bll.AddReview(review);
         }
 
-        private static void Delete() //дать доступ только админу
+        private static void Delete() //дать доступ админу
         {
             var bll = DependencyResolver.Instance.ReviewLogic;
 
@@ -42,6 +42,7 @@ namespace Epam.Store.ConsolePL
 
         }
 
+       
         private static void Edit()
         {
             var bll = DependencyResolver.Instance.ReviewLogic;
@@ -63,44 +64,158 @@ namespace Epam.Store.ConsolePL
 
         }
 
-        static void Main(string[] args)
+        private static void Check(string log, string pas)
         {
-
-            Console.WriteLine("Выберите номер действия из списка: \n" +
-                "1. Добавить отзыв \n" +
-                "2. Удалить отзыв \n" +
-                "3. Редактировать отзыв \n");
-
-            int action = int.Parse(Console.ReadLine());
-
-            switch (action)
-            {
-                case 1:
-
-                    Add();
-                    break;
-
-                case 2:
-
-                    Delete();
-                    break;
-
-                case 3:
-
-                    Edit();
-                    break;
-
-            }
-
-
-
-
             var bll = DependencyResolver.Instance.ReviewLogic;
 
-            foreach(var item in bll.GetReviews())
+            string res = bll.CheckEnter(log, pas);
+
+            Console.WriteLine(res);
+
+            if (res == "admin") //у администратора нет прав добавить/редактировать отзыв, возможно только удаление оценки, в случае если она нарушает политику магазина, и просмотр всех отзывов
             {
-                Console.WriteLine(item);
+                Console.WriteLine("Выберите номер действия из списка: \n" +
+                "1. Удалить отзыв \n" +
+                "2. Список всех оценок \n" +
+                "3. Поиск по названию магазина");
+
+                int action = int.Parse(Console.ReadLine());
+
+                switch (action)
+                {
+                    case 1:
+
+                        Delete();
+
+                        break;
+
+                    case 2:
+
+                        foreach (var item in bll.GetReviews())
+                        {
+                            Console.WriteLine(item);
+                        }
+
+                        break;
+
+                    case 3:
+
+                        foreach (var item in bll.GetReviews())
+                        {
+                            Console.WriteLine(item);
+                        }
+
+                        Console.WriteLine("Введите название магазина для поиска");
+
+                        string name = Console.ReadLine();
+
+                        foreach (var item in bll.FindByShopName(name))
+                        {
+                            Console.WriteLine(item);
+                        }
+
+                        break;
+
+                    default:
+
+                        break;
+                }
             }
+            if (res == "shopper")
+
+                {
+                    Console.WriteLine("Выберите номер действия из списка: \n" +
+                    "1. Добавить отзыв \n" +
+                    "2. Удалить отзыв \n" +
+                    "3. Редактировать отзыв \n" +
+                    "4. Посмотреть все оценки \n" +
+                    "5. Поиск по названию магазина"
+                    );
+
+                    int actionShopper = int.Parse(Console.ReadLine());
+
+                    switch (actionShopper)
+                    {
+                        case 1:
+
+                            Add();
+
+                            break;
+
+                        case 2:
+
+                            Delete();
+
+                            break;
+
+                        case 3:
+
+                            Edit();
+
+                            break;
+
+                        case 4:
+
+                            foreach (var item in bll.GetReviews())
+                            {
+                                Console.WriteLine(item);
+                            }
+
+                            break;
+
+                        case 5:
+
+                        foreach (var item in bll.GetReviews())
+                        {
+                            Console.WriteLine(item);
+                        }
+
+                        Console.WriteLine("Введите название магазина для поиска");
+
+                        string name = Console.ReadLine();
+
+                        foreach (var item in bll.FindByShopName(name))
+                        {
+                            Console.WriteLine(item);
+                        }
+
+                        break;
+
+                    default:
+
+                            break;
+                    }
+
+                }
+            
+            if (res == "nofind")
+                {
+                    Console.WriteLine("Неверный логин и/или пароль");
+                }
+        }
+
+        static void Main(string[] args)
+        {   
+            //тестовый для админа login: asd, password: qwerty
+            //для покупателя login: dsa, password: ytrewq
+
+            Console.WriteLine("Для использования приложения необходима авторизация \n" +
+                "Введите логин:");
+
+            string log = Console.ReadLine();
+
+            Console.WriteLine("Введите пароль:");
+
+            string pas = Console.ReadLine();
+
+            Check(log, pas);
+
+            //var bll = DependencyResolver.Instance.ReviewLogic;
+
+            //foreach(var item in bll.GetReviews())
+            //{
+            //    Console.WriteLine(item);
+            //}
         }
     }
 }

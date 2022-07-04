@@ -53,4 +53,55 @@ namespace Epam.Store.Entities
             return JsonConvert.SerializeObject(this);
         }
     }
+
+    public class User
+    {
+        public int Id_user { get; set; }
+
+        public string Name { get; set; }
+
+        public DateTime Birth { get; set; }
+
+        public int Id_account { get; set; }
+
+        public string Mail { get; set; }
+
+        public User()
+        {
+
+        }
+
+    }
+
+    public class Account_data
+    {
+        public int Id_account { get; set; }
+
+        public string Login { get; set; }
+
+        public string Password { get; set; }
+
+        public string Role { get; set; }
+
+        public int Id_user { get; set; }
+
+        public Account_data()
+        {
+
+        }
+    }
+
+    public class User_rating
+    {
+        public int Id_user { get; set; }
+
+        public int Id { get; set; }
+
+        public User_rating(int id_user, int id)
+        {
+            Id_user = id_user;
+
+            Id = id;
+        }
+    }
 }

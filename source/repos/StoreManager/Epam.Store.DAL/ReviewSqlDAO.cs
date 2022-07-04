@@ -167,6 +167,56 @@ namespace Epam.Store.DAL
             }
         }
 
+        public string CheckEnter(string log, string pas)
+        {
+            using (_connection = new SqlConnection(_connectionString))
+            {
+                var strProc = "dbo.Account_data_CheckEnter";
+
+                var command = new SqlCommand(strProc, _connection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
+
+                command.Parameters.AddWithValue("@log", log);
+                command.Parameters.AddWithValue("@pas", pas);
+                command.Parameters.AddWithValue("@role", "nofind");
+
+                _connection.Open();
+                var result = command.ExecuteScalar();
+  
+                return Convert.ToString(result);
+            }
+        }
+
+        public IEnumerable<Review> FindByShopName(string name)
+        {
+            using (_connection = new SqlConnection(_connectionString))
+            {
+                var strProc = "dbo.Reviews_FindByShopName";
+
+                var command = new SqlCommand(strProc, _connection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
+                command.Parameters.AddWithValue("@name", name);
+                _connection.Open();
+
+                var reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    yield return new Review(
+                        id: (int)reader["Id"],
+                        shop_name: reader["Shop_name"] as string,
+                        text: reader["Text"] as string,
+                        creationDate: (DateTime)reader["CreationDate"]);
+
+                }
+
+            }
+        }
+
     } 
 }
 
