@@ -1,0 +1,13 @@
+use Reviews
+go
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE dbo.User_GetUsers
+as
+BEGIN
+	SET	NOCOUNT OFF;
+	SELECT Id_user, Name, Birth, Mail FROM User_ ORDER BY Name
+END

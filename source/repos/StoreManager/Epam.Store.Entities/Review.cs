@@ -56,13 +56,26 @@ namespace Epam.Store.Entities
 
     public class User
     {
+
+        public User(int id, string name, DateTime birth,  string text)
+        {
+            Id_user = id;
+            Name = name;
+            Birth = birth;
+            Mail = text;
+        }
+
+        public User(string text)
+        {
+            Id_user = -1;
+            Mail = text;
+     
+        }
         public int Id_user { get; set; }
 
         public string Name { get; set; }
 
         public DateTime Birth { get; set; }
-
-        public int Id_account { get; set; }
 
         public string Mail { get; set; }
 
@@ -70,7 +83,10 @@ namespace Epam.Store.Entities
         {
 
         }
-
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
     }
 
     public class Account_data

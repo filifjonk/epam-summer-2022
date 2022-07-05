@@ -64,6 +64,42 @@ namespace Epam.Store.ConsolePL
 
         }
 
+        private static void EditProfile(string mail)
+        {
+            var mybll = DependencyResolver.Instance.ReviewLogic;
+
+            Console.WriteLine("Выберите, что нужно изменить \n" +
+                "1. Имя \n" +
+                "2. Электронный адрес");
+            int option = int.Parse(Console.ReadLine());
+            
+            switch (option)
+            {
+                case 1:
+                    Console.WriteLine("Введите новое имя");
+
+                    string newName = Console.ReadLine();
+
+                    mybll.EditUserName(mail, newName);
+
+                    break;
+
+                case 2:
+
+                    Console.WriteLine("Новый электронный адрес:");
+
+                    string newMail = Console.ReadLine();
+
+                    mybll.EditUserMail(mail, newMail);
+
+                    break;
+
+                default:
+
+                    break;
+            }
+        }
+
         private static void Check(string log, string pas)
         {
             var bll = DependencyResolver.Instance.ReviewLogic;
@@ -77,7 +113,8 @@ namespace Epam.Store.ConsolePL
                 Console.WriteLine("Выберите номер действия из списка: \n" +
                 "1. Удалить отзыв \n" +
                 "2. Список всех оценок \n" +
-                "3. Поиск по названию магазина");
+                "3. Поиск по названию магазина \n" +
+                "4. Посмотреть список профилей");
 
                 int action = int.Parse(Console.ReadLine());
 
@@ -116,6 +153,15 @@ namespace Epam.Store.ConsolePL
 
                         break;
 
+                    case 4:
+
+                        foreach (var item in bll.GetUsers())
+                        {
+                            Console.WriteLine(item);
+                        }
+
+                        break;
+
                     default:
 
                         break;
@@ -129,7 +175,8 @@ namespace Epam.Store.ConsolePL
                     "2. Удалить отзыв \n" +
                     "3. Редактировать отзыв \n" +
                     "4. Посмотреть все оценки \n" +
-                    "5. Поиск по названию магазина"
+                    "5. Поиск по названию магазина \n" +
+                    "6. Редактировать профиль"
                     );
 
                     int actionShopper = int.Parse(Console.ReadLine());
@@ -178,6 +225,16 @@ namespace Epam.Store.ConsolePL
                         {
                             Console.WriteLine(item);
                         }
+
+                        break;
+
+                    case 6:
+
+                        Console.WriteLine("Для того, чтобы редактировать профиль, необходимо ввести e-mail:");
+
+                        string mail = Console.ReadLine();
+                    
+                        EditProfile(mail);
 
                         break;
 

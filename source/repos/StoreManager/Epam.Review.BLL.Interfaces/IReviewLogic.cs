@@ -17,6 +17,10 @@ namespace Epam.Reviews.BLL.Interfaces
 
         void EditReview(int id, string newText);
 
+        void EditUserName(string mail, string newName);
+
+        void EditUserMail(string mail, string newMail);
+
         string CheckEnter(string log, string pas);
 
         Review GetReview(int id);
@@ -24,5 +28,7 @@ namespace Epam.Reviews.BLL.Interfaces
         IEnumerable<Review> GetReviews(bool orderById = true);
 
         IEnumerable<Review> FindByShopName(string name);
+
+        IEnumerable<User> GetUsers(bool orderById = true);
     }
 }

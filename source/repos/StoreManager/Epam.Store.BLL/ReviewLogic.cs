@@ -35,6 +35,16 @@ namespace Epam.Store.BLL
             _reviewDAO.EditReview(id, str);
         }
 
+        public void EditUserName(string mail, string newName)
+        {
+            _reviewDAO.EditUserName(mail, newName);
+        }
+
+        public void EditUserMail(string mail, string newMail)
+        {
+            _reviewDAO.EditUserMail(mail, newMail);
+        }
+
         public string CheckEnter(string log, string pas)
         {
             _reviewDAO.CheckEnter(log, pas);
@@ -46,5 +56,7 @@ namespace Epam.Store.BLL
         public Review GetReview(int id) => _reviewDAO.GetReview(id);
 
         public IEnumerable<Review> GetReviews(bool orderById = true) => _reviewDAO.GetReviews(orderById);
+
+        public IEnumerable<User> GetUsers(bool orderById = true) => _reviewDAO.GetUsers(orderById);
     }
 }

@@ -45,6 +45,34 @@ namespace Epam.Store.DAL
 
         }
 
+        public IEnumerable<User> GetUsers(bool orderById = true)
+        {
+            using (_connection = new SqlConnection(_connectionString))
+            {
+                var stProc = "User_GetUsers";
+
+                var command = new SqlCommand(stProc, _connection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
+
+                _connection.Open();
+
+                var reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    yield return new User(
+                        id: (int)reader["Id_user"],
+                        name: reader["Name"] as string,
+                        birth: (DateTime)reader["Birth"],
+                        text: reader["Mail"] as string);
+                    
+                }
+            }
+
+        }
+
         public bool AddReview(Review review)
         {
             using (_connection = new SqlConnection(_connectionString))
@@ -158,6 +186,50 @@ namespace Epam.Store.DAL
 
                 command.Parameters.AddWithValue("@ID", id);
                 command.Parameters.AddWithValue("@Change", str);
+
+
+                _connection.Open();
+                var result = command.ExecuteNonQuery();
+
+                return (result > 0);
+            }
+        }
+
+        public bool EditUserName(string mail, string newName)
+        {
+            using (_connection = new SqlConnection(_connectionString))
+            {
+                var strProc = "dbo.User_EditUserName";
+
+                var command = new SqlCommand(strProc, _connection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
+
+                command.Parameters.AddWithValue("@mail", mail);
+                command.Parameters.AddWithValue("@newName", newName);
+
+
+                _connection.Open();
+                var result = command.ExecuteNonQuery();
+
+                return (result > 0);
+            }
+        }
+
+        public bool EditUserMail(string mail, string newMail)
+        {
+            using (_connection = new SqlConnection(_connectionString))
+            {
+                var strProc = "dbo.User_EditUserMail";
+
+                var command = new SqlCommand(strProc, _connection)
+                {
+                    CommandType = System.Data.CommandType.StoredProcedure
+                };
+
+                command.Parameters.AddWithValue("@mail", mail);
+                command.Parameters.AddWithValue("@newMail", newMail);
 
 
                 _connection.Open();
